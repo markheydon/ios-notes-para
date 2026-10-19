@@ -64,10 +64,12 @@ jobs:
           BOOK_RELEASE: ${{ inputs.release && '1' || '0' }}
           BOOK_VERSION: ${{ inputs.book_version }}
         run: |
+          # Scripts committed via the GitHub API are 100644. Invoke with bash
+          # so `./scripts/build-book.sh` does not fail with exit 126.
           if [ "${{ inputs.release }}" = "true" ]; then
-            ./scripts/build-book.sh release
+            bash scripts/build-book.sh release
           else
-            ./scripts/build-book.sh
+            bash scripts/build-book.sh
           fi
 
       - name: Upload build output for release attach

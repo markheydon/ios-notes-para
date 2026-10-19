@@ -16,6 +16,7 @@ on:
       - 'book/**'
       - 'scripts/check-guide.py'
       - '.github/workflows/guide-check.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
