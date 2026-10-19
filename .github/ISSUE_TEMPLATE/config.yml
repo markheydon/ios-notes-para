@@ -1,0 +1,11 @@
+blank_issues: false
+contact_links:
+  - name: Read the published guide
+    url: https://markheydon.me.uk/ios-notes-para/
+    about: The live guide (same content as docs/ on main)
+  - name: The PARA Method (method)
+    url: https://fortelabs.com/blog/para/
+    about: Tiago Forte’s method; this repo is an independent Notes implementation, not an official Forte Labs product
+  - name: Reminders GTD (sibling guide)
+    url: https://markheydon.me.uk/ios-reminders-gtd/
+    about: Getting Things Done in Reminders; next actions live there, not in Notes
