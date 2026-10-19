@@ -1,7 +1,19 @@
 #!/usr/bin/env bash
 # Sync labels from .github/labels.yml to GitHub using the gh CLI.
 # Usage: ./scripts/sync-github-labels.sh [owner/repo]
+#        bash ./scripts/sync-github-labels.sh [owner/repo]
 # Default repo: markheydon/ios-notes-para
+#
+# Needs bash (not dash). If you run `sh ./scripts/sync-github-labels.sh`, this
+# file re-execs itself with bash so [[ and arrays still work.
+
+if [ -z "${BASH_VERSION:-}" ]; then
+  if command -v bash >/dev/null 2>&1; then
+    exec bash "$0" "$@"
+  fi
+  echo "error: this script needs bash (you ran it with sh). Try: bash $0" >&2
+  exit 1
+fi
 
 set -euo pipefail
 
