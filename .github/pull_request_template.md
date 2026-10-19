@@ -16,7 +16,7 @@ Linked issue: <!-- #123 or none -->
 
 - [ ] [AGENTS.md](AGENTS.md) house style (UK English, spaced hyphens, curly quotes, naming)
 - [ ] Editorial review run (`/review-changes` or equivalent): yes / no
-- [ ] [README.md](README.md) \u2194 [docs/index.md](docs/index.md) synced if navigation or titles changed
+- [ ] [README.md](README.md) ↔ [docs/index.md](docs/index.md) synced if navigation or titles changed
 - [ ] [docs/images/](docs/images/) updated if the model changed
 - [ ] [editorial-notes.md](editorial-notes.md) checked for known open questions
 
